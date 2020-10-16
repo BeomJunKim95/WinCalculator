@@ -22,6 +22,7 @@ namespace WinCalculator
 		private void button_Click(object sender, EventArgs e)
 		{
 			btn = (Button)sender; // sender가 object형식이니 button형식으로 형변환
+
 			// 여러개의 컨트롤을 하나로 몰아줄때 그때 sender사용
 			lblCal.Text += (btn.Text);
 		}
