@@ -1,0 +1,24 @@
+폼 속성,이벤트 키패드추가한 내용 정리
+
+e.KeyChar == 13 : 엔터키
+
+직접실행창 : 중간중간 궁금한 변수값이나 이런걸 바로 보여줌
+
+폼 디자인을 완료하면 탭인덱스를 사용해 포커스를 맞춰주기
+
+폼 속성
+AutoScaleMode : 폼의 비율을 폰트에 따라가게 만들거나하는 폼크기를 조절하는 속성
+KeyPreview : 무언가 키가 눌리면 내가 먼저 받겠다는 속성
+	    폼에도 KeyPress 이벤트가 있는데 KeyPress 이벤트가 많고 똑같은 이벤트를 등록
+	    해야할때 폼의 KeyPress 이벤트를 사용하면 한개의 이벤트로 다 쓸수있다
+	    **그래서 폼의 KeyPress를 쓰고싶으면 속성의 KeyPreview를 true로 놔야한다**
+
+데이터그리드뷰 속성
+Columns : 데이터그리드뷰의 컬럼을 설정하는 것
+dataGridView1.AutoGenerateColumns : 이건 속성창에 보이지않아 코드로 . 찍어서 써야한다
+			        	 열이 자동으로 생성되게 하는 속성 디폴트는  true
+
+데이터그리드뷰 이벤트핸들러
+(Double)Click : 데이터 그리드뷰 어디든 클릭했을때
+CellClick(Double) : 셀을 클릭했을때
+CellContentClick(Double) : 내용이 있는 셀을 클릭했을때
