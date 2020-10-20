@@ -165,7 +165,7 @@
 			this.button10.Name = "button10";
 			this.button10.Size = new System.Drawing.Size(60, 60);
 			this.button10.TabIndex = 10;
-			this.button10.Text = "%";
+			this.button10.Text = "/";
 			this.button10.UseVisualStyleBackColor = true;
 			this.button10.Click += new System.EventHandler(this.button_Click_Operator);
 			// 
@@ -222,7 +222,7 @@
 			this.button15.TabIndex = 15;
 			this.button15.Text = "=";
 			this.button15.UseVisualStyleBackColor = true;
-			this.button15.Click += new System.EventHandler(this.button_Click_Equal);
+			this.button15.Click += new System.EventHandler(this.button_Click_Operator);
 			// 
 			// button16
 			// 
@@ -269,8 +269,10 @@
 			this.Controls.Add(this.button1);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+			this.KeyPreview = true;
 			this.Name = "Form1";
 			this.Text = "계산기";
+			this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
 			this.ResumeLayout(false);
 
 		}
